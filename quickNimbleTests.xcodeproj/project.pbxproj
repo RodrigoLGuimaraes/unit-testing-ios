@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		05A526612136EC6100C29D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A526602136EC6100C29D83 /* AppDelegate.swift */; };
-		05A526632136EC6100C29D83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A526622136EC6100C29D83 /* ViewController.swift */; };
-		05A526662136EC6100C29D83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A526642136EC6100C29D83 /* Main.storyboard */; };
 		05A526682136EC6300C29D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A526672136EC6300C29D83 /* Assets.xcassets */; };
 		05A5266B2136EC6300C29D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A526692136EC6300C29D83 /* LaunchScreen.storyboard */; };
 		05A526762136EC6400C29D83 /* quickNimbleTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A526752136EC6400C29D83 /* quickNimbleTestsTests.swift */; };
+		05E226CA213707B300F60B4A /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E226C8213707B300F60B4A /* CalculatorViewController.swift */; };
+		05E226CB213707B300F60B4A /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E226C9213707B300F60B4A /* CalculatorViewController.xib */; };
 		81C67FBC3B704DD06C5BFB88 /* Pods_quickNimbleTestsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89299BF040BF362860BCA134 /* Pods_quickNimbleTestsTests.framework */; };
 		9824195E5AC89CA732EFA301 /* Pods_quickNimbleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513580D5514D89535A868861 /* Pods_quickNimbleTests.framework */; };
 /* End PBXBuildFile section */
@@ -30,14 +30,14 @@
 /* Begin PBXFileReference section */
 		05A5265D2136EC6100C29D83 /* quickNimbleTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quickNimbleTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A526602136EC6100C29D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		05A526622136EC6100C29D83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		05A526652136EC6100C29D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05A526672136EC6300C29D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05A5266A2136EC6300C29D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05A5266C2136EC6300C29D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05A526712136EC6400C29D83 /* quickNimbleTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quickNimbleTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A526752136EC6400C29D83 /* quickNimbleTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quickNimbleTestsTests.swift; sourceTree = "<group>"; };
 		05A526772136EC6400C29D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05E226C8213707B300F60B4A /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		05E226C9213707B300F60B4A /* CalculatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
 		4E16F46182C14343CD0FB2E5 /* Pods-quickNimbleTestsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickNimbleTestsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-quickNimbleTestsTests/Pods-quickNimbleTestsTests.release.xcconfig"; sourceTree = "<group>"; };
 		513580D5514D89535A868861 /* Pods_quickNimbleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quickNimbleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CC698F68B404B80E8A332F8 /* Pods-quickNimbleTestsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickNimbleTestsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-quickNimbleTestsTests/Pods-quickNimbleTestsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,9 +89,8 @@
 		05A5265F2136EC6100C29D83 /* quickNimbleTests */ = {
 			isa = PBXGroup;
 			children = (
+				05E226C72137079B00F60B4A /* Calculator */,
 				05A526602136EC6100C29D83 /* AppDelegate.swift */,
-				05A526622136EC6100C29D83 /* ViewController.swift */,
-				05A526642136EC6100C29D83 /* Main.storyboard */,
 				05A526672136EC6300C29D83 /* Assets.xcassets */,
 				05A526692136EC6300C29D83 /* LaunchScreen.storyboard */,
 				05A5266C2136EC6300C29D83 /* Info.plist */,
@@ -106,6 +105,15 @@
 				05A526772136EC6400C29D83 /* Info.plist */,
 			);
 			path = quickNimbleTestsTests;
+			sourceTree = "<group>";
+		};
+		05E226C72137079B00F60B4A /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				05E226C8213707B300F60B4A /* CalculatorViewController.swift */,
+				05E226C9213707B300F60B4A /* CalculatorViewController.xib */,
+			);
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 		D0B83DFA44295F334D26B26C /* Frameworks */ = {
@@ -213,8 +221,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				05A5266B2136EC6300C29D83 /* LaunchScreen.storyboard in Resources */,
+				05E226CB213707B300F60B4A /* CalculatorViewController.xib in Resources */,
 				05A526682136EC6300C29D83 /* Assets.xcassets in Resources */,
-				05A526662136EC6100C29D83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05A526632136EC6100C29D83 /* ViewController.swift in Sources */,
+				05E226CA213707B300F60B4A /* CalculatorViewController.swift in Sources */,
 				05A526612136EC6100C29D83 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,14 +323,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		05A526642136EC6100C29D83 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				05A526652136EC6100C29D83 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		05A526692136EC6300C29D83 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -456,7 +456,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 736XU9D7S8;
 				INFOPLIST_FILE = quickNimbleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigolg.quickNimbleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -472,7 +475,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 736XU9D7S8;
 				INFOPLIST_FILE = quickNimbleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigolg.quickNimbleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -489,7 +495,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 736XU9D7S8;
 				INFOPLIST_FILE = quickNimbleTestsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigolg.quickNimbleTestsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -507,7 +517,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 736XU9D7S8;
 				INFOPLIST_FILE = quickNimbleTestsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigolg.quickNimbleTestsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
