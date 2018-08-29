@@ -1,0 +1,6 @@
+framework module Pods_quickNimbleTestsTests {
+  umbrella header "Pods-quickNimbleTestsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

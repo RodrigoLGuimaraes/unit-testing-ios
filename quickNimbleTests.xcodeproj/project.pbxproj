@@ -13,6 +13,8 @@
 		05A526682136EC6300C29D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A526672136EC6300C29D83 /* Assets.xcassets */; };
 		05A5266B2136EC6300C29D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A526692136EC6300C29D83 /* LaunchScreen.storyboard */; };
 		05A526762136EC6400C29D83 /* quickNimbleTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A526752136EC6400C29D83 /* quickNimbleTestsTests.swift */; };
+		81C67FBC3B704DD06C5BFB88 /* Pods_quickNimbleTestsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89299BF040BF362860BCA134 /* Pods_quickNimbleTestsTests.framework */; };
+		9824195E5AC89CA732EFA301 /* Pods_quickNimbleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513580D5514D89535A868861 /* Pods_quickNimbleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,12 @@
 		05A526712136EC6400C29D83 /* quickNimbleTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quickNimbleTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A526752136EC6400C29D83 /* quickNimbleTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quickNimbleTestsTests.swift; sourceTree = "<group>"; };
 		05A526772136EC6400C29D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E16F46182C14343CD0FB2E5 /* Pods-quickNimbleTestsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickNimbleTestsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-quickNimbleTestsTests/Pods-quickNimbleTestsTests.release.xcconfig"; sourceTree = "<group>"; };
+		513580D5514D89535A868861 /* Pods_quickNimbleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quickNimbleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CC698F68B404B80E8A332F8 /* Pods-quickNimbleTestsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickNimbleTestsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-quickNimbleTestsTests/Pods-quickNimbleTestsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		89299BF040BF362860BCA134 /* Pods_quickNimbleTestsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quickNimbleTestsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1F9FF911DA7E8480D094234 /* Pods-quickNimbleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickNimbleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-quickNimbleTests/Pods-quickNimbleTests.release.xcconfig"; sourceTree = "<group>"; };
+		FF21DF68F4A80E32620ABEA6 /* Pods-quickNimbleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickNimbleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-quickNimbleTests/Pods-quickNimbleTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9824195E5AC89CA732EFA301 /* Pods_quickNimbleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C67FBC3B704DD06C5BFB88 /* Pods_quickNimbleTestsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				05A5265F2136EC6100C29D83 /* quickNimbleTests */,
 				05A526742136EC6400C29D83 /* quickNimbleTestsTests */,
 				05A5265E2136EC6100C29D83 /* Products */,
+				EB65BFA4F31905366C618ACB /* Pods */,
+				D0B83DFA44295F334D26B26C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,26 @@
 			path = quickNimbleTestsTests;
 			sourceTree = "<group>";
 		};
+		D0B83DFA44295F334D26B26C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				513580D5514D89535A868861 /* Pods_quickNimbleTests.framework */,
+				89299BF040BF362860BCA134 /* Pods_quickNimbleTestsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB65BFA4F31905366C618ACB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF21DF68F4A80E32620ABEA6 /* Pods-quickNimbleTests.debug.xcconfig */,
+				E1F9FF911DA7E8480D094234 /* Pods-quickNimbleTests.release.xcconfig */,
+				6CC698F68B404B80E8A332F8 /* Pods-quickNimbleTestsTests.debug.xcconfig */,
+				4E16F46182C14343CD0FB2E5 /* Pods-quickNimbleTestsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,6 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05A5267A2136EC6400C29D83 /* Build configuration list for PBXNativeTarget "quickNimbleTests" */;
 			buildPhases = (
+				0DF9737571A514493B6049D3 /* [CP] Check Pods Manifest.lock */,
 				05A526592136EC6100C29D83 /* Sources */,
 				05A5265A2136EC6100C29D83 /* Frameworks */,
 				05A5265B2136EC6100C29D83 /* Resources */,
@@ -120,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05A5267D2136EC6400C29D83 /* Build configuration list for PBXNativeTarget "quickNimbleTestsTests" */;
 			buildPhases = (
+				87B268379EAB9233323FC099 /* [CP] Check Pods Manifest.lock */,
 				05A5266D2136EC6400C29D83 /* Sources */,
 				05A5266E2136EC6400C29D83 /* Frameworks */,
 				05A5266F2136EC6400C29D83 /* Resources */,
+				01350492753ABBEC10753023 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +226,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01350492753ABBEC10753023 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-quickNimbleTestsTests/Pods-quickNimbleTestsTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-quickNimbleTestsTests/Pods-quickNimbleTestsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0DF9737571A514493B6049D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-quickNimbleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87B268379EAB9233323FC099 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-quickNimbleTestsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		05A526592136EC6100C29D83 /* Sources */ = {
@@ -356,15 +450,13 @@
 		};
 		05A5267B2136EC6400C29D83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF21DF68F4A80E32620ABEA6 /* Pods-quickNimbleTests.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 736XU9D7S8;
 				INFOPLIST_FILE = quickNimbleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigolg.quickNimbleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -374,15 +466,13 @@
 		};
 		05A5267C2136EC6400C29D83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1F9FF911DA7E8480D094234 /* Pods-quickNimbleTests.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 736XU9D7S8;
 				INFOPLIST_FILE = quickNimbleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigolg.quickNimbleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -392,17 +482,14 @@
 		};
 		05A5267E2136EC6400C29D83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CC698F68B404B80E8A332F8 /* Pods-quickNimbleTestsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 736XU9D7S8;
 				INFOPLIST_FILE = quickNimbleTestsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigolg.quickNimbleTestsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -413,17 +500,14 @@
 		};
 		05A5267F2136EC6400C29D83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E16F46182C14343CD0FB2E5 /* Pods-quickNimbleTestsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 736XU9D7S8;
 				INFOPLIST_FILE = quickNimbleTestsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigolg.quickNimbleTestsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
