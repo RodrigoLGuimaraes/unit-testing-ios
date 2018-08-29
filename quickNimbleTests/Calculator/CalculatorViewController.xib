@@ -26,18 +26,47 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KVd-ff-v78">
                     <rect key="frame" x="-0.5" y="0.0" width="375" height="667"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A vista ou a prazo?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUK-8L-jBP">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEste" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUK-8L-jBP">
                             <rect key="frame" x="24" y="28" width="327" height="41"/>
                             <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
                             <color key="textColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dM-OU-6Qy" customClass="BorderedTransparentView" customModule="quickNimbleTests" customModuleProvider="target">
+                            <rect key="frame" x="24" y="93" width="327" height="81.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor a vista" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEX-lI-u1f">
+                                    <rect key="frame" x="8" y="8" width="110" height="28"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                    <color key="textColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TMr-aB-Hgp">
+                                    <rect key="frame" x="8" y="43.5" width="311" height="30"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="TMr-aB-Hgp" firstAttribute="top" secondItem="SEX-lI-u1f" secondAttribute="bottom" constant="8" id="BHv-g3-yyM"/>
+                                <constraint firstItem="TMr-aB-Hgp" firstAttribute="leading" secondItem="3dM-OU-6Qy" secondAttribute="leading" constant="8" id="GbQ-6w-sGf"/>
+                                <constraint firstAttribute="bottom" secondItem="TMr-aB-Hgp" secondAttribute="bottom" constant="8" id="bbd-ZG-waW"/>
+                                <constraint firstItem="SEX-lI-u1f" firstAttribute="leading" secondItem="3dM-OU-6Qy" secondAttribute="leading" constant="8" id="juL-oZ-RzD"/>
+                                <constraint firstAttribute="trailing" secondItem="TMr-aB-Hgp" secondAttribute="trailing" constant="8" id="pdo-7e-srr"/>
+                                <constraint firstItem="SEX-lI-u1f" firstAttribute="top" secondItem="3dM-OU-6Qy" secondAttribute="top" constant="8" id="xBY-Hw-F74"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="aUK-8L-jBP" firstAttribute="top" secondItem="KVd-ff-v78" secondAttribute="top" constant="28" id="B3R-aT-WFL"/>
+                        <constraint firstItem="3dM-OU-6Qy" firstAttribute="top" secondItem="aUK-8L-jBP" secondAttribute="bottom" constant="24" id="Lt3-MH-K1P"/>
+                        <constraint firstAttribute="trailing" secondItem="3dM-OU-6Qy" secondAttribute="trailing" constant="24" id="YU8-J6-5Z0"/>
                         <constraint firstItem="aUK-8L-jBP" firstAttribute="leading" secondItem="KVd-ff-v78" secondAttribute="leading" constant="24" id="nhJ-Kr-MZ4"/>
                         <constraint firstAttribute="trailing" secondItem="aUK-8L-jBP" secondAttribute="trailing" constant="24" id="oqd-ES-R18"/>
+                        <constraint firstItem="3dM-OU-6Qy" firstAttribute="leading" secondItem="KVd-ff-v78" secondAttribute="leading" constant="24" id="reQ-fd-JiN"/>
                     </constraints>
                 </view>
             </subviews>
@@ -53,6 +82,7 @@
                 <constraint firstItem="KVd-ff-v78" firstAttribute="width" secondItem="ql1-P2-Yzb" secondAttribute="width" id="gRS-xc-Mu5"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
     </objects>
     <resources>
