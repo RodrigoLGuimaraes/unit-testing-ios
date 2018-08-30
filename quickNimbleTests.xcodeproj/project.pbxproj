@@ -15,6 +15,10 @@
 		05E226CB213707B300F60B4A /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E226C9213707B300F60B4A /* CalculatorViewController.xib */; };
 		05E226CE21372B3A00F60B4A /* BorderedTransparentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E226CD21372B3A00F60B4A /* BorderedTransparentView.swift */; };
 		05E226D221383A9C00F60B4A /* IncrediblyBeautifulButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E226D121383A9C00F60B4A /* IncrediblyBeautifulButton.swift */; };
+		05E226D42138742700F60B4A /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E226D32138742700F60B4A /* String+Utils.swift */; };
+		05E226D72138778600F60B4A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E226D52138778600F60B4A /* ResultViewController.swift */; };
+		05E226D82138778600F60B4A /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E226D62138778600F60B4A /* ResultViewController.xib */; };
+		05F8910B21388D12005F0001 /* Double+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F8910A21388D12005F0001 /* Double+Utils.swift */; };
 		81C67FBC3B704DD06C5BFB88 /* Pods_quickNimbleTestsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89299BF040BF362860BCA134 /* Pods_quickNimbleTestsTests.framework */; };
 		9824195E5AC89CA732EFA301 /* Pods_quickNimbleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513580D5514D89535A868861 /* Pods_quickNimbleTests.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +46,10 @@
 		05E226C9213707B300F60B4A /* CalculatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
 		05E226CD21372B3A00F60B4A /* BorderedTransparentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedTransparentView.swift; sourceTree = "<group>"; };
 		05E226D121383A9C00F60B4A /* IncrediblyBeautifulButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrediblyBeautifulButton.swift; sourceTree = "<group>"; };
+		05E226D32138742700F60B4A /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		05E226D52138778600F60B4A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		05E226D62138778600F60B4A /* ResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
+		05F8910A21388D12005F0001 /* Double+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Utils.swift"; sourceTree = "<group>"; };
 		4E16F46182C14343CD0FB2E5 /* Pods-quickNimbleTestsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickNimbleTestsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-quickNimbleTestsTests/Pods-quickNimbleTestsTests.release.xcconfig"; sourceTree = "<group>"; };
 		513580D5514D89535A868861 /* Pods_quickNimbleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quickNimbleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CC698F68B404B80E8A332F8 /* Pods-quickNimbleTestsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickNimbleTestsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-quickNimbleTestsTests/Pods-quickNimbleTestsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +101,7 @@
 		05A5265F2136EC6100C29D83 /* quickNimbleTests */ = {
 			isa = PBXGroup;
 			children = (
+				05F8910921388D04005F0001 /* Utils */,
 				05E226CC21372B2E00F60B4A /* Components */,
 				05E226C72137079B00F60B4A /* Calculator */,
 				05A526602136EC6100C29D83 /* AppDelegate.swift */,
@@ -117,6 +126,8 @@
 			children = (
 				05E226C8213707B300F60B4A /* CalculatorViewController.swift */,
 				05E226C9213707B300F60B4A /* CalculatorViewController.xib */,
+				05E226D52138778600F60B4A /* ResultViewController.swift */,
+				05E226D62138778600F60B4A /* ResultViewController.xib */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -128,6 +139,15 @@
 				05E226D121383A9C00F60B4A /* IncrediblyBeautifulButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		05F8910921388D04005F0001 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				05E226D32138742700F60B4A /* String+Utils.swift */,
+				05F8910A21388D12005F0001 /* Double+Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		D0B83DFA44295F334D26B26C /* Frameworks */ = {
@@ -237,6 +257,7 @@
 				05A5266B2136EC6300C29D83 /* LaunchScreen.storyboard in Resources */,
 				05E226CB213707B300F60B4A /* CalculatorViewController.xib in Resources */,
 				05A526682136EC6300C29D83 /* Assets.xcassets in Resources */,
+				05E226D82138778600F60B4A /* ResultViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,10 +334,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F8910B21388D12005F0001 /* Double+Utils.swift in Sources */,
+				05E226D42138742700F60B4A /* String+Utils.swift in Sources */,
 				05E226D221383A9C00F60B4A /* IncrediblyBeautifulButton.swift in Sources */,
 				05E226CA213707B300F60B4A /* CalculatorViewController.swift in Sources */,
 				05E226CE21372B3A00F60B4A /* BorderedTransparentView.swift in Sources */,
 				05A526612136EC6100C29D83 /* AppDelegate.swift in Sources */,
+				05E226D72138778600F60B4A /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

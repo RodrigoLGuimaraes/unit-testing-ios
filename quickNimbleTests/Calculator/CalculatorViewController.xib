@@ -12,6 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalculatorViewController" customModule="quickNimbleTests" customModuleProvider="target">
             <connections>
+                <outlet property="installmentQuantity" destination="5Wl-mB-kqs" id="vPc-0U-dzl"/>
+                <outlet property="installmentValue" destination="09H-1I-aIw" id="eXp-jB-hhf"/>
+                <outlet property="rentabilityPercentage" destination="bot-5W-Jc6" id="E7h-wf-ql8"/>
+                <outlet property="singlePaymentValue" destination="TMr-aB-Hgp" id="Jyi-SR-BkN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -155,6 +159,9 @@ U3VhIHJlbnRhYmlsaWRhZGUgYW51YWw6A+KAqFZBWklPID0gUE9VUEFOw4dBA
                                             </constraints>
                                             <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                             <state key="normal" title="O QUE É MELHOR?"/>
+                                            <connections>
+                                                <action selector="didAskForResult:" destination="-1" eventType="touchUpInside" id="ZZr-gK-DRj"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

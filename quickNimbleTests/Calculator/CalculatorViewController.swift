@@ -9,7 +9,12 @@
 import UIKit
 
 class CalculatorViewController: UIViewController {
-
+    
+    @IBOutlet weak var singlePaymentValue: UITextField!
+    @IBOutlet weak var rentabilityPercentage: UITextField!
+    @IBOutlet weak var installmentQuantity: UITextField!
+    @IBOutlet weak var installmentValue: UITextField!
+    
     init() {
         super.init(nibName: String(describing: "CalculatorViewController"), bundle: nil)
     }
@@ -25,5 +30,17 @@ class CalculatorViewController: UIViewController {
     func configureViews() {
         
     }
+    
+    @IBAction func didAskForResult(_ sender: Any) {
+        guard let singlePaymentValue = self.singlePaymentValue.text?.toDouble(),
+              let installmentValue = self.installmentValue.text?.toDouble(),
+              let numberOfInstallments = self.installmentQuantity.text?.toInt() else {
+                //TODO: show error
+                return
+        }
+        
+        
+    }
+    
     
 }
