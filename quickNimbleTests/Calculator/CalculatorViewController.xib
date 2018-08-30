@@ -27,16 +27,16 @@
                     <rect key="frame" x="-0.5" y="0.0" width="375" height="667"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A vista ou a prazo?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUK-8L-jBP">
-                            <rect key="frame" x="23.5" y="28" width="327" height="41"/>
+                            <rect key="frame" x="23.5" y="36" width="327" height="41"/>
                             <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
                             <color key="textColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FMQ-jG-Im8">
-                            <rect key="frame" x="0.0" y="69" width="375" height="598"/>
+                            <rect key="frame" x="0.0" y="77" width="375" height="590"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPj-56-c9g">
-                                    <rect key="frame" x="24" y="52.5" width="327" height="494"/>
+                                    <rect key="frame" x="24" y="48.5" width="327" height="494"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dM-OU-6Qy" userLabel="ValorAVista" customClass="BorderedTransparentView" customModule="quickNimbleTests" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="327" height="81.5"/>
@@ -191,7 +191,6 @@ U3VhIHJlbnRhYmlsaWRhZGUgYW51YWw6A+KAqFZBWklPID0gUE9VUEFOw4dBA
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="aUK-8L-jBP" firstAttribute="top" secondItem="KVd-ff-v78" secondAttribute="top" constant="28" id="B3R-aT-WFL"/>
                         <constraint firstAttribute="bottom" secondItem="FMQ-jG-Im8" secondAttribute="bottom" id="IM4-QD-5Ps"/>
                         <constraint firstAttribute="trailing" secondItem="FMQ-jG-Im8" secondAttribute="trailing" id="KPK-yn-pU9"/>
                         <constraint firstItem="FMQ-jG-Im8" firstAttribute="top" secondItem="aUK-8L-jBP" secondAttribute="bottom" id="V7s-il-Aji"/>
@@ -209,6 +208,7 @@ U3VhIHJlbnRhYmlsaWRhZGUgYW51YWw6A+KAqFZBWklPID0gUE9VUEFOw4dBA
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ql1-P2-Yzb" secondAttribute="trailing" id="RkO-TZ-Ncu"/>
                 <constraint firstItem="KVd-ff-v78" firstAttribute="height" secondItem="ql1-P2-Yzb" secondAttribute="height" id="TfX-Bu-0uQ"/>
                 <constraint firstItem="ql1-P2-Yzb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Vkc-dX-22k"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="aUK-8L-jBP" secondAttribute="top" constant="-16" id="ewU-V3-BuR"/>
                 <constraint firstAttribute="bottom" secondItem="ql1-P2-Yzb" secondAttribute="bottom" id="fp6-Ha-VM2"/>
                 <constraint firstItem="KVd-ff-v78" firstAttribute="width" secondItem="ql1-P2-Yzb" secondAttribute="width" id="gRS-xc-Mu5"/>
             </constraints>
