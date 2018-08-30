@@ -14,6 +14,7 @@
 		05E226CA213707B300F60B4A /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E226C8213707B300F60B4A /* CalculatorViewController.swift */; };
 		05E226CB213707B300F60B4A /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E226C9213707B300F60B4A /* CalculatorViewController.xib */; };
 		05E226CE21372B3A00F60B4A /* BorderedTransparentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E226CD21372B3A00F60B4A /* BorderedTransparentView.swift */; };
+		05E226D221383A9C00F60B4A /* IncrediblyBeautifulButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E226D121383A9C00F60B4A /* IncrediblyBeautifulButton.swift */; };
 		81C67FBC3B704DD06C5BFB88 /* Pods_quickNimbleTestsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89299BF040BF362860BCA134 /* Pods_quickNimbleTestsTests.framework */; };
 		9824195E5AC89CA732EFA301 /* Pods_quickNimbleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513580D5514D89535A868861 /* Pods_quickNimbleTests.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		05E226C8213707B300F60B4A /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		05E226C9213707B300F60B4A /* CalculatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
 		05E226CD21372B3A00F60B4A /* BorderedTransparentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedTransparentView.swift; sourceTree = "<group>"; };
+		05E226D121383A9C00F60B4A /* IncrediblyBeautifulButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrediblyBeautifulButton.swift; sourceTree = "<group>"; };
 		4E16F46182C14343CD0FB2E5 /* Pods-quickNimbleTestsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickNimbleTestsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-quickNimbleTestsTests/Pods-quickNimbleTestsTests.release.xcconfig"; sourceTree = "<group>"; };
 		513580D5514D89535A868861 /* Pods_quickNimbleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quickNimbleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CC698F68B404B80E8A332F8 /* Pods-quickNimbleTestsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickNimbleTestsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-quickNimbleTestsTests/Pods-quickNimbleTestsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				05E226CD21372B3A00F60B4A /* BorderedTransparentView.swift */,
+				05E226D121383A9C00F60B4A /* IncrediblyBeautifulButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05E226D221383A9C00F60B4A /* IncrediblyBeautifulButton.swift in Sources */,
 				05E226CA213707B300F60B4A /* CalculatorViewController.swift in Sources */,
 				05E226CE21372B3A00F60B4A /* BorderedTransparentView.swift in Sources */,
 				05A526612136EC6100C29D83 /* AppDelegate.swift in Sources */,

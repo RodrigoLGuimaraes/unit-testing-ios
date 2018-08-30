@@ -26,7 +26,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KVd-ff-v78">
                     <rect key="frame" x="-0.5" y="0.0" width="375" height="667"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEste" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUK-8L-jBP">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A vista ou a prazo?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUK-8L-jBP">
                             <rect key="frame" x="23.5" y="28" width="327" height="41"/>
                             <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
                             <color key="textColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
@@ -36,9 +36,9 @@
                             <rect key="frame" x="0.0" y="69" width="375" height="598"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPj-56-c9g">
-                                    <rect key="frame" x="24" y="205.5" width="327" height="187"/>
+                                    <rect key="frame" x="24" y="52.5" width="327" height="494"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dM-OU-6Qy" customClass="BorderedTransparentView" customModule="quickNimbleTests" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dM-OU-6Qy" userLabel="ValorAVista" customClass="BorderedTransparentView" customModule="quickNimbleTests" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="327" height="81.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor a vista" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEX-lI-u1f">
@@ -64,11 +64,11 @@
                                                 <constraint firstItem="SEX-lI-u1f" firstAttribute="top" secondItem="3dM-OU-6Qy" secondAttribute="top" constant="8" id="xBY-Hw-F74"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfA-Jx-XrU" customClass="BorderedTransparentView" customModule="quickNimbleTests" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfA-Jx-XrU" userLabel="ValorDaParcela" customClass="BorderedTransparentView" customModule="quickNimbleTests" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="105.5" width="327" height="81.5"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor a vista" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqQ-nf-fYe">
-                                                    <rect key="frame" x="8" y="8" width="110" height="28"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor da parcela" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqQ-nf-fYe">
+                                                    <rect key="frame" x="8" y="8" width="149" height="28"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                                     <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -91,18 +91,93 @@
                                             </constraints>
                                             <viewLayoutGuide key="safeArea" id="8xr-R8-Utc"/>
                                         </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Cr-AW-Z9D" userLabel="NumeroDeParcelas" customClass="BorderedTransparentView" customModule="quickNimbleTests" customModuleProvider="target">
+                                            <rect key="frame" x="-0.5" y="211" width="327" height="81.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numero de parcelas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7j-ri-o23">
+                                                    <rect key="frame" x="8" y="8" width="186.5" height="28"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                                    <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Wl-mB-kqs">
+                                                    <rect key="frame" x="8" y="43.5" width="311" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="5Wl-mB-kqs" firstAttribute="top" secondItem="M7j-ri-o23" secondAttribute="bottom" constant="8" id="3Xd-vx-yM0"/>
+                                                <constraint firstItem="5Wl-mB-kqs" firstAttribute="leading" secondItem="9Cr-AW-Z9D" secondAttribute="leading" constant="8" id="KUP-B3-CNe"/>
+                                                <constraint firstAttribute="trailing" secondItem="5Wl-mB-kqs" secondAttribute="trailing" constant="8" id="UpF-tP-5iR"/>
+                                                <constraint firstAttribute="bottom" secondItem="5Wl-mB-kqs" secondAttribute="bottom" constant="8" id="jY6-9o-xFY"/>
+                                                <constraint firstItem="M7j-ri-o23" firstAttribute="top" secondItem="9Cr-AW-Z9D" secondAttribute="top" constant="8" id="xeD-69-PD1"/>
+                                                <constraint firstItem="M7j-ri-o23" firstAttribute="leading" secondItem="9Cr-AW-Z9D" secondAttribute="leading" constant="8" id="yRI-rm-790"/>
+                                            </constraints>
+                                            <viewLayoutGuide key="safeArea" id="pRS-do-umb"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVX-b9-s4z" userLabel="Rentabilidade" customClass="BorderedTransparentView" customModule="quickNimbleTests" customModuleProvider="target">
+                                            <rect key="frame" x="-0.5" y="316.5" width="327" height="108.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qf3-ud-5wd">
+                                                    <rect key="frame" x="8" y="8" width="223.5" height="55"/>
+                                                    <string key="text" base64-UTF8="YES">
+U3VhIHJlbnRhYmlsaWRhZGUgYW51YWw6A+KAqFZBWklPID0gUE9VUEFOw4dBA
+</string>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                                    <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bot-5W-Jc6">
+                                                    <rect key="frame" x="8" y="70.5" width="311" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="qf3-ud-5wd" firstAttribute="top" secondItem="EVX-b9-s4z" secondAttribute="top" constant="8" id="INu-cv-CIV"/>
+                                                <constraint firstAttribute="trailing" secondItem="bot-5W-Jc6" secondAttribute="trailing" constant="8" id="SBL-SG-laz"/>
+                                                <constraint firstItem="bot-5W-Jc6" firstAttribute="leading" secondItem="EVX-b9-s4z" secondAttribute="leading" constant="8" id="h8M-Jq-ekv"/>
+                                                <constraint firstAttribute="bottom" secondItem="bot-5W-Jc6" secondAttribute="bottom" constant="8" id="tVW-Yu-HZX"/>
+                                                <constraint firstItem="bot-5W-Jc6" firstAttribute="top" secondItem="qf3-ud-5wd" secondAttribute="bottom" constant="8" id="z1j-en-2oA"/>
+                                                <constraint firstItem="qf3-ud-5wd" firstAttribute="leading" secondItem="EVX-b9-s4z" secondAttribute="leading" constant="8" id="zbb-ZA-9HX"/>
+                                            </constraints>
+                                            <viewLayoutGuide key="safeArea" id="qxz-zI-G4N"/>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ep-lh-bjN" customClass="IncrediblyBeautifulButton" customModule="quickNimbleTests" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="449" width="327" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="hxp-G3-jW7"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                            <state key="normal" title="O QUE É MELHOR?"/>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="cfA-Jx-XrU" firstAttribute="width" secondItem="3dM-OU-6Qy" secondAttribute="width" id="1Sq-RC-9KW"/>
                                         <constraint firstItem="3dM-OU-6Qy" firstAttribute="centerX" secondItem="IPj-56-c9g" secondAttribute="centerX" id="6jF-mt-yRI"/>
+                                        <constraint firstItem="6ep-lh-bjN" firstAttribute="top" secondItem="EVX-b9-s4z" secondAttribute="bottom" constant="24" id="C17-cJ-74P"/>
+                                        <constraint firstItem="6ep-lh-bjN" firstAttribute="centerX" secondItem="EVX-b9-s4z" secondAttribute="centerX" id="DEq-lf-Nfl"/>
                                         <constraint firstItem="cfA-Jx-XrU" firstAttribute="top" secondItem="3dM-OU-6Qy" secondAttribute="bottom" constant="24" id="KFm-J2-BE0"/>
+                                        <constraint firstItem="9Cr-AW-Z9D" firstAttribute="top" secondItem="cfA-Jx-XrU" secondAttribute="bottom" constant="24" id="PDN-aG-KSN"/>
                                         <constraint firstItem="3dM-OU-6Qy" firstAttribute="top" secondItem="IPj-56-c9g" secondAttribute="top" id="SKj-fX-cNA"/>
+                                        <constraint firstAttribute="bottom" secondItem="6ep-lh-bjN" secondAttribute="bottom" id="SmD-jO-0g8"/>
+                                        <constraint firstItem="9Cr-AW-Z9D" firstAttribute="centerX" secondItem="cfA-Jx-XrU" secondAttribute="centerX" id="T3o-5r-NOK"/>
+                                        <constraint firstItem="EVX-b9-s4z" firstAttribute="top" secondItem="9Cr-AW-Z9D" secondAttribute="bottom" constant="24" id="W9a-o5-fLp"/>
                                         <constraint firstAttribute="trailing" secondItem="3dM-OU-6Qy" secondAttribute="trailing" id="XcV-vP-vG9"/>
+                                        <constraint firstItem="9Cr-AW-Z9D" firstAttribute="width" secondItem="cfA-Jx-XrU" secondAttribute="width" id="Z1Z-06-92O"/>
+                                        <constraint firstItem="6ep-lh-bjN" firstAttribute="width" secondItem="EVX-b9-s4z" secondAttribute="width" id="ZsU-a1-98y"/>
                                         <constraint firstItem="cfA-Jx-XrU" firstAttribute="centerX" secondItem="3dM-OU-6Qy" secondAttribute="centerX" id="g0i-lp-g0H"/>
-                                        <constraint firstAttribute="bottom" secondItem="cfA-Jx-XrU" secondAttribute="bottom" id="h1U-6u-dx3"/>
                                         <constraint firstItem="3dM-OU-6Qy" firstAttribute="leading" secondItem="IPj-56-c9g" secondAttribute="leading" id="pH8-EV-XzP"/>
                                         <constraint firstItem="cfA-Jx-XrU" firstAttribute="height" secondItem="3dM-OU-6Qy" secondAttribute="height" id="smf-iH-jm8"/>
+                                        <constraint firstItem="9Cr-AW-Z9D" firstAttribute="height" secondItem="cfA-Jx-XrU" secondAttribute="height" id="tLl-wT-n0G"/>
+                                        <constraint firstItem="EVX-b9-s4z" firstAttribute="centerX" secondItem="9Cr-AW-Z9D" secondAttribute="centerX" id="wGM-U7-5c8"/>
+                                        <constraint firstItem="EVX-b9-s4z" firstAttribute="width" secondItem="9Cr-AW-Z9D" secondAttribute="width" id="wNk-Qz-HEa"/>
                                     </constraints>
                                 </view>
                             </subviews>
@@ -139,34 +214,6 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="24.5" y="51.5"/>
-        </view>
-        <view contentMode="scaleToFill" id="4GL-Rf-0xa" customClass="BorderedTransparentView" customModule="quickNimbleTests" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor a vista" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAf-g6-pbO">
-                    <rect key="frame" x="8" y="8" width="110" height="28"/>
-                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
-                    <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q18-KX-5Ty">
-                    <rect key="frame" x="8" y="43.5" width="359" height="615.5"/>
-                    <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                </textField>
-            </subviews>
-            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-            <constraints>
-                <constraint firstItem="RAf-g6-pbO" firstAttribute="leading" secondItem="4GL-Rf-0xa" secondAttribute="leading" constant="8" id="E5Y-ZQ-fHh"/>
-                <constraint firstItem="q18-KX-5Ty" firstAttribute="leading" secondItem="4GL-Rf-0xa" secondAttribute="leading" constant="8" id="Ljn-T6-wKe"/>
-                <constraint firstItem="q18-KX-5Ty" firstAttribute="top" secondItem="RAf-g6-pbO" secondAttribute="bottom" constant="8" id="M4u-dd-cI6"/>
-                <constraint firstItem="RAf-g6-pbO" firstAttribute="top" secondItem="4GL-Rf-0xa" secondAttribute="top" constant="8" id="b6i-il-nRb"/>
-                <constraint firstAttribute="bottom" secondItem="q18-KX-5Ty" secondAttribute="bottom" constant="8" id="fii-9h-d0y"/>
-                <constraint firstAttribute="trailing" secondItem="q18-KX-5Ty" secondAttribute="trailing" constant="8" id="gFD-UW-jrH"/>
-            </constraints>
-            <viewLayoutGuide key="safeArea" id="tt7-NF-wID"/>
         </view>
     </objects>
     <resources>
