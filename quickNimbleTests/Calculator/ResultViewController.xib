@@ -13,10 +13,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultViewController" customModule="quickNimbleTests" customModuleProvider="target">
             <connections>
-                <outlet property="investedValue" destination="Qb1-I6-Tgb" id="aQp-O1-UsG"/>
+                <outlet property="descriptionLabel" destination="Qb1-I6-Tgb" id="fyQ-o5-abi"/>
+                <outlet property="iconView" destination="qiw-T9-PMA" id="BdD-ud-T2x"/>
                 <outlet property="resultLabel" destination="cxe-ZU-kBI" id="UWn-Lf-nKG"/>
                 <outlet property="resultValueLabel" destination="VgQ-ua-Vx6" id="MqI-ZF-jvN"/>
-                <outlet property="totalValueInstallments" destination="xtl-3R-qGv" id="3x3-0V-Y8F"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,6 +25,15 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0d-wo-GuD" customClass="BorderedTransparentView" customModule="quickNimbleTests" customModuleProvider="target">
+                    <rect key="frame" x="7.5" y="8" width="359" height="651"/>
+                    <color key="backgroundColor" white="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="viewBackgroundColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="0.92000000000000004" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="money" translatesAutoresizingMaskIntoConstraints="NO" id="qiw-T9-PMA">
                     <rect key="frame" x="24" y="277" width="327" height="133"/>
                 </imageView>
@@ -37,39 +46,47 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você vai economizar R$100,00!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgQ-ua-Vx6">
                     <rect key="frame" x="23.5" y="81" width="327" height="22"/>
                     <fontDescription key="fontDescription" name="AvenirNext-HeavyItalic" family="Avenir Next" pointSize="16"/>
-                    <color key="textColor" red="0.63137254901960782" green="0.80784313725490198" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="0.1911550909280777" green="0.6378670334815979" blue="0.26147949695587158" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VALOR A VISTA APÓS INVESTIMENTO:  R$500,00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qb1-I6-Tgb">
-                    <rect key="frame" x="24" y="127" width="327" height="44"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Se você pagar parcelado e aplicar o valor a vista, vão faltar 100 reais na hora de pagar as parcelas." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qb1-I6-Tgb">
+                    <rect key="frame" x="23.5" y="127" width="327" height="66"/>
                     <fontDescription key="fontDescription" name="AvenirNext-HeavyItalic" family="Avenir Next" pointSize="16"/>
                     <color key="textColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VALOR DO PARCELAMENTO: R$550,00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtl-3R-qGv">
-                    <rect key="frame" x="24" y="179" width="327" height="44"/>
-                    <fontDescription key="fontDescription" name="AvenirNext-HeavyItalic" family="Avenir Next" pointSize="16"/>
-                    <color key="textColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRy-VI-ORq" customClass="IncrediblyBeautifulButton" customModule="quickNimbleTests" customModuleProvider="target">
+                    <rect key="frame" x="24" y="598" width="327" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="4Yl-SE-GJS"/>
+                    </constraints>
+                    <state key="normal" title="BELEZA, VOU PAGAR!"/>
+                    <connections>
+                        <action selector="dismiss:" destination="-1" eventType="touchUpInside" id="uHv-w8-x3F"/>
+                    </connections>
+                </button>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qiw-T9-PMA" secondAttribute="trailing" constant="24" id="03d-G7-v8X"/>
                 <constraint firstItem="Qb1-I6-Tgb" firstAttribute="top" secondItem="VgQ-ua-Vx6" secondAttribute="bottom" constant="24" id="6GU-1f-1yL"/>
                 <constraint firstItem="VgQ-ua-Vx6" firstAttribute="top" secondItem="cxe-ZU-kBI" secondAttribute="bottom" constant="8" id="Bgm-gt-Evd"/>
                 <constraint firstItem="Qb1-I6-Tgb" firstAttribute="width" secondItem="VgQ-ua-Vx6" secondAttribute="width" id="Isr-MJ-dUN"/>
-                <constraint firstItem="xtl-3R-qGv" firstAttribute="top" secondItem="Qb1-I6-Tgb" secondAttribute="bottom" constant="8" id="LGs-wh-mD4"/>
                 <constraint firstItem="Qb1-I6-Tgb" firstAttribute="centerX" secondItem="VgQ-ua-Vx6" secondAttribute="centerX" id="MgX-5B-ZhO"/>
                 <constraint firstItem="VgQ-ua-Vx6" firstAttribute="width" secondItem="cxe-ZU-kBI" secondAttribute="width" id="R6p-ND-UQp"/>
                 <constraint firstItem="qiw-T9-PMA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="SaF-9h-uLk"/>
+                <constraint firstItem="t0d-wo-GuD" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Vra-EI-3EA"/>
                 <constraint firstItem="VgQ-ua-Vx6" firstAttribute="centerX" secondItem="cxe-ZU-kBI" secondAttribute="centerX" id="VwI-4A-bc5"/>
                 <constraint firstItem="qiw-T9-PMA" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="VyB-Wf-koB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bRy-VI-ORq" secondAttribute="trailing" constant="24" id="YAy-TR-UNZ"/>
                 <constraint firstItem="cxe-ZU-kBI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="biA-p7-v6Z"/>
                 <constraint firstItem="cxe-ZU-kBI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="fMu-ge-Vw5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bRy-VI-ORq" secondAttribute="bottom" constant="24" id="gjy-LD-wtN"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cxe-ZU-kBI" secondAttribute="trailing" constant="24" id="jAW-cM-Nxd"/>
-                <constraint firstItem="xtl-3R-qGv" firstAttribute="width" secondItem="Qb1-I6-Tgb" secondAttribute="width" id="nKc-P2-jbV"/>
-                <constraint firstItem="xtl-3R-qGv" firstAttribute="centerX" secondItem="Qb1-I6-Tgb" secondAttribute="centerX" id="rMg-Bz-DEN"/>
+                <constraint firstItem="t0d-wo-GuD" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" constant="-16" id="kgX-Np-abm"/>
+                <constraint firstItem="t0d-wo-GuD" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" constant="-16" id="mw2-o2-wsz"/>
+                <constraint firstItem="bRy-VI-ORq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="nP4-gs-B2p"/>
+                <constraint firstItem="t0d-wo-GuD" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="yVp-pM-QSG"/>
                 <constraint firstItem="qiw-T9-PMA" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.2" id="zDu-p0-lDp"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

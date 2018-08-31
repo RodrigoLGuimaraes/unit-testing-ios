@@ -51,7 +51,7 @@
                                                     <color key="textColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TMr-aB-Hgp">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TMr-aB-Hgp">
                                                     <rect key="frame" x="8" y="43.5" width="311" height="30"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -77,7 +77,7 @@
                                                     <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="09H-1I-aIw">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="09H-1I-aIw">
                                                     <rect key="frame" x="8" y="43.5" width="311" height="30"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -104,7 +104,7 @@
                                                     <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Wl-mB-kqs">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Wl-mB-kqs">
                                                     <rect key="frame" x="8" y="43.5" width="311" height="30"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -134,17 +134,25 @@ U3VhIHJlbnRhYmlsaWRhZGUgYW51YWw6A+KAqFZBWklPID0gUE9VUEFOw4dBA
                                                     <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bot-5W-Jc6">
-                                                    <rect key="frame" x="8" y="70.5" width="311" height="30"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bot-5W-Jc6">
+                                                    <rect key="frame" x="8" y="70.5" width="284" height="30"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysz-Lv-PuJ">
+                                                    <rect key="frame" x="300" y="71.5" width="19" height="28"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                                    <color key="textColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
+                                                <constraint firstItem="qxz-zI-G4N" firstAttribute="trailing" secondItem="Ysz-Lv-PuJ" secondAttribute="trailing" constant="8" id="9Cz-A0-gx9"/>
                                                 <constraint firstItem="qf3-ud-5wd" firstAttribute="top" secondItem="EVX-b9-s4z" secondAttribute="top" constant="8" id="INu-cv-CIV"/>
-                                                <constraint firstAttribute="trailing" secondItem="bot-5W-Jc6" secondAttribute="trailing" constant="8" id="SBL-SG-laz"/>
+                                                <constraint firstItem="Ysz-Lv-PuJ" firstAttribute="centerY" secondItem="bot-5W-Jc6" secondAttribute="centerY" id="QGP-WG-uia"/>
+                                                <constraint firstItem="Ysz-Lv-PuJ" firstAttribute="leading" secondItem="bot-5W-Jc6" secondAttribute="trailing" constant="8" id="Qj1-Se-HkM"/>
                                                 <constraint firstItem="bot-5W-Jc6" firstAttribute="leading" secondItem="EVX-b9-s4z" secondAttribute="leading" constant="8" id="h8M-Jq-ekv"/>
                                                 <constraint firstAttribute="bottom" secondItem="bot-5W-Jc6" secondAttribute="bottom" constant="8" id="tVW-Yu-HZX"/>
                                                 <constraint firstItem="bot-5W-Jc6" firstAttribute="top" secondItem="qf3-ud-5wd" secondAttribute="bottom" constant="8" id="z1j-en-2oA"/>

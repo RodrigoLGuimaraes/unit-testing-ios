@@ -31,15 +31,50 @@ class CalculatorViewController: UIViewController {
         
     }
     
+    private func compoundInterest(initialValue: Double, numberOfPeriods: Int, interestPerPeriod: Double) -> Double {
+        
+        var amount = initialValue
+        
+        for _ in 0..<numberOfPeriods {
+            amount *= interestPerPeriod
+        }
+        
+        return amount
+    }
+    
     @IBAction func didAskForResult(_ sender: Any) {
         guard let singlePaymentValue = self.singlePaymentValue.text?.toDouble(),
               let installmentValue = self.installmentValue.text?.toDouble(),
-              let numberOfInstallments = self.installmentQuantity.text?.toInt() else {
+              let numberOfInstallments = self.installmentQuantity.text?.toInt(),
+              numberOfInstallments > 0 else {
                 //TODO: show error
                 return
         }
         
+        let annualRevenue = self.rentabilityPercentage.text?.toDouble() ?? 5.0 //TODO: retrieve percentage
         
+        let annualMultiplier = 1 + (annualRevenue/100)
+        
+        let monthlyMultiplier = pow(annualMultiplier, 1/12.0)
+        
+        let totalValueInstallments = Double(numberOfInstallments) * installmentValue
+        
+        var totalValueAfterInvestment: Double = singlePaymentValue
+        
+        var currentInvestedValue = singlePaymentValue
+        for i in 1...numberOfInstallments {
+            totalValueAfterInvestment += self.compoundInterest(initialValue: currentInvestedValue, numberOfPeriods: i, interestPerPeriod: monthlyMultiplier) - currentInvestedValue
+            
+            currentInvestedValue -= installmentValue
+            if currentInvestedValue > 0 {
+                break
+            }
+        }
+        
+        let resultViewController = ResultViewController(totalSingleValue: totalValueAfterInvestment, totalInstallmentsValue: totalValueInstallments)
+        resultViewController.modalTransitionStyle = .crossDissolve
+        resultViewController.modalPresentationStyle = .overCurrentContext
+        self.present(resultViewController, animated: true, completion: nil)
     }
     
     
