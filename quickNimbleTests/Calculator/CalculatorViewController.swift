@@ -15,6 +15,10 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var installmentQuantity: UITextField!
     @IBOutlet weak var installmentValue: UITextField!
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     init() {
         super.init(nibName: String(describing: "CalculatorViewController"), bundle: nil)
     }

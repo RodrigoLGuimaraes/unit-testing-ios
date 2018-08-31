@@ -60,6 +60,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="4Yl-SE-GJS"/>
                     </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                     <state key="normal" title="BELEZA, VOU PAGAR!"/>
                     <connections>
                         <action selector="dismiss:" destination="-1" eventType="touchUpInside" id="uHv-w8-x3F"/>
