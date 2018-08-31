@@ -35,52 +35,49 @@ class CalculatorViewController: UIViewController {
         
     }
     
-    private func compoundInterest(initialValue: Double, numberOfPeriods: Int, interestPerPeriod: Double) -> Double {
-        
-        var amount = initialValue
-        
-        for _ in 0..<numberOfPeriods {
-            amount *= interestPerPeriod
-        }
-        
-        return amount
+    private func showErrorAlert() {
+        let alert = UIAlertController(title: "Ops", message: "Tem algum dado errado, confere lá?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
-    @IBAction func didAskForResult(_ sender: Any) {
-        guard let singlePaymentValue = self.singlePaymentValue.text?.toDouble(),
-              let installmentValue = self.installmentValue.text?.toDouble(),
-              let numberOfInstallments = self.installmentQuantity.text?.toInt(),
-              numberOfInstallments > 0 else {
-                let alert = UIAlertController(title: "Ops", message: "Tem algum dado errado, confere lá?", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-                return
-        }
-        
-        let annualRevenue = self.rentabilityPercentage.text?.toDouble() ?? 5.0 //TODO: retrieve percentage
-        
-        let annualMultiplier = 1 + (annualRevenue/100)
-        
-        let monthlyMultiplier = pow(annualMultiplier, 1/12.0)
-        
-        let totalValueInstallments = Double(numberOfInstallments) * installmentValue
-        
-        var totalValueAfterInvestment: Double = singlePaymentValue
-        
-        var currentInvestedValue = singlePaymentValue
-        for i in 1...numberOfInstallments {
-            totalValueAfterInvestment += self.compoundInterest(initialValue: currentInvestedValue, numberOfPeriods: i, interestPerPeriod: monthlyMultiplier) - currentInvestedValue
-            
-            currentInvestedValue -= installmentValue
-            if currentInvestedValue > 0 {
-                break
-            }
-        }
-        
-        let resultViewController = ResultViewController(totalSingleValue: totalValueAfterInvestment, totalInstallmentsValue: totalValueInstallments)
+    private func presentResult(totalSingleValue: Double, totalInstallmentsValue: Double) {
+        let resultViewController = ResultViewController(totalSingleValue: totalSingleValue, totalInstallmentsValue: totalInstallmentsValue)
         resultViewController.modalTransitionStyle = .crossDissolve
         resultViewController.modalPresentationStyle = .overCurrentContext
         self.present(resultViewController, animated: true, completion: nil)
+    }
+    
+    private func retrieveCalculationInput() -> CalculationInput {
+        guard let singlePaymentValue = self.singlePaymentValue.text?.toDouble(),
+            let installmentValue = self.installmentValue.text?.toDouble(),
+            let numberOfInstallments = self.installmentQuantity.text?.toInt(),
+            numberOfInstallments > 0 else {
+                return CalculationInput(singlePaymentValue: 0,
+                                        installmentValue: 0,
+                                        numberOfInstallments: 0,
+                                        annualRevenue: 0,
+                                        error: NSError(domain: "", code: 403, userInfo: nil))
+        }
+        
+        let annualRevenue = self.rentabilityPercentage.text?.toDouble() ?? 4.55022554
+        
+        return CalculationInput(singlePaymentValue: singlePaymentValue,
+                                installmentValue: installmentValue,
+                                numberOfInstallments: numberOfInstallments,
+                                annualRevenue: annualRevenue, error: nil)
+    }
+    
+    @IBAction func didAskForResult(_ sender: Any) {
+        let calcInput = self.retrieveCalculationInput()
+        
+        guard calcInput.error == nil else {
+            self.showErrorAlert()
+            return
+        }
+        
+        let calcResult = Calculator.calculateCurrentValues(input: calcInput)
+        self.presentResult(totalSingleValue: calcResult.totalSingleValue, totalInstallmentsValue: calcResult.totalInstallmentsValue)
     }
     
     
