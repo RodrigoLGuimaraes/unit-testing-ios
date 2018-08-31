@@ -47,7 +47,9 @@ class CalculatorViewController: UIViewController {
               let installmentValue = self.installmentValue.text?.toDouble(),
               let numberOfInstallments = self.installmentQuantity.text?.toInt(),
               numberOfInstallments > 0 else {
-                //TODO: show error
+                let alert = UIAlertController(title: "Ops", message: "Tem algum dado errado, confere lá?", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
                 return
         }
         
