@@ -68,11 +68,12 @@ class CalculatorViewController: UIViewController {
         var totalValueAfterInvestment: Double = singlePaymentValue
         
         var currentInvestedValue = singlePaymentValue
-        for i in 1...numberOfInstallments {
-            totalValueAfterInvestment += self.compoundInterest(initialValue: currentInvestedValue, numberOfPeriods: i, interestPerPeriod: monthlyMultiplier) - currentInvestedValue
+        for _ in 1...numberOfInstallments {
+            let newCurrentInvestedValue = currentInvestedValue * monthlyMultiplier
+            totalValueAfterInvestment += newCurrentInvestedValue - currentInvestedValue
+            currentInvestedValue = newCurrentInvestedValue - installmentValue
             
-            currentInvestedValue -= installmentValue
-            if currentInvestedValue > 0 {
+            if currentInvestedValue < 0 {
                 break
             }
         }
