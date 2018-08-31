@@ -8,6 +8,12 @@
 
 import UIKit
 
+struct CalculationResult {
+    let totalSingleValue: Double
+    let totalInstallmentsValue: Double
+    let error: Error?
+}
+
 class CalculatorViewController: UIViewController {
     
     @IBOutlet weak var singlePaymentValue: UITextField!
@@ -46,21 +52,30 @@ class CalculatorViewController: UIViewController {
         return amount
     }
     
-    @IBAction func didAskForResult(_ sender: Any) {
+    private func showErrorAlert() {
+        let alert = UIAlertController(title: "Ops", message: "Tem algum dado errado, confere lá?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    private func presentResult(totalSingleValue: Double, totalInstallmentsValue: Double) {
+        let resultViewController = ResultViewController(totalSingleValue: totalSingleValue, totalInstallmentsValue: totalInstallmentsValue)
+        resultViewController.modalTransitionStyle = .crossDissolve
+        resultViewController.modalPresentationStyle = .overCurrentContext
+        self.present(resultViewController, animated: true, completion: nil)
+    }
+    
+    private func calculateCurrentValues() -> CalculationResult {
         guard let singlePaymentValue = self.singlePaymentValue.text?.toDouble(),
-              let installmentValue = self.installmentValue.text?.toDouble(),
-              let numberOfInstallments = self.installmentQuantity.text?.toInt(),
-              numberOfInstallments > 0 else {
-                let alert = UIAlertController(title: "Ops", message: "Tem algum dado errado, confere lá?", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-                return
+            let installmentValue = self.installmentValue.text?.toDouble(),
+            let numberOfInstallments = self.installmentQuantity.text?.toInt(),
+            numberOfInstallments > 0 else {
+                return CalculationResult(totalSingleValue: 0, totalInstallmentsValue: 0, error: NSError(domain: "", code: 403, userInfo: nil))
         }
         
-        let annualRevenue = self.rentabilityPercentage.text?.toDouble() ?? 5.0 //TODO: retrieve percentage
+        let annualRevenue = self.rentabilityPercentage.text?.toDouble() ?? 4.55022554
         
         let annualMultiplier = 1 + (annualRevenue/100)
-        
         let monthlyMultiplier = pow(annualMultiplier, 1/12.0)
         
         let totalValueInstallments = Double(numberOfInstallments) * installmentValue
@@ -77,10 +92,18 @@ class CalculatorViewController: UIViewController {
             }
         }
         
-        let resultViewController = ResultViewController(totalSingleValue: totalValueAfterInvestment, totalInstallmentsValue: totalValueInstallments)
-        resultViewController.modalTransitionStyle = .crossDissolve
-        resultViewController.modalPresentationStyle = .overCurrentContext
-        self.present(resultViewController, animated: true, completion: nil)
+        return CalculationResult(totalSingleValue: totalValueAfterInvestment, totalInstallmentsValue: totalValueInstallments, error: nil)
+    }
+    
+    @IBAction func didAskForResult(_ sender: Any) {
+        let calcResult = self.calculateCurrentValues()
+        
+        guard calcResult.error == nil else {
+            self.showErrorAlert()
+            return
+        }
+        
+        self.presentResult(totalSingleValue: calcResult.totalSingleValue, totalInstallmentsValue: calcResult.totalInstallmentsValue)
     }
     
     
