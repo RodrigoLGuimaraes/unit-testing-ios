@@ -43,7 +43,7 @@ class CalculatorViewController: UIViewController {
     
     private func presentResult(totalSingleValue: Double, totalInstallmentsValue: Double) {
         let resultViewController = ResultViewController(totalSingleValue: totalSingleValue, totalInstallmentsValue: totalInstallmentsValue)
-        resultViewController.modalTransitionStyle = .crossDissolve
+        resultViewController.modalTransitionStyle = .flipHorizontal
         resultViewController.modalPresentationStyle = .overCurrentContext
         self.present(resultViewController, animated: true, completion: nil)
     }

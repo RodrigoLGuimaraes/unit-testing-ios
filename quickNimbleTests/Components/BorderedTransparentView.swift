@@ -10,12 +10,12 @@ import UIKit
 
 class BorderedTransparentView: UIView {
     
-    @IBInspectable var viewBackgroundColor: UIColor = UIColor.white.withAlphaComponent(0.1)
+    @IBInspectable var viewBackgroundColor: UIColor = UIColor.white.withAlphaComponent(0.2)
     
     override func awakeFromNib() {
         self.layer.cornerRadius = 10
-        self.layer.borderWidth = 2
-        self.layer.borderColor = UIColor.white.cgColor
+//        self.layer.borderWidth = 2
+//        self.layer.borderColor = UIColor.white.cgColor
         self.backgroundColor = self.viewBackgroundColor
     }
 }
