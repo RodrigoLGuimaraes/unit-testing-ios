@@ -6,6 +6,7 @@ target 'quickNimbleTests' do
   use_frameworks!
 
   # Pods for quickNimbleTests
+  pod 'IQKeyboardManagerSwift'
 
   target 'quickNimbleTestsTests' do
     inherit! :search_paths
